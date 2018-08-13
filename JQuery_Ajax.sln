@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JQuery_Ajax", "JQuery_Ajax\JQuery_Ajax.csproj", "{DCFBA6BE-8291-4048-9336-5C77FDA3E2CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AjaxTable.Data", "AjaxTable.Data\AjaxTable.Data.csproj", "{089C9143-F948-49E0-AA4B-62E800BD6A5C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DCFBA6BE-8291-4048-9336-5C77FDA3E2CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCFBA6BE-8291-4048-9336-5C77FDA3E2CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCFBA6BE-8291-4048-9336-5C77FDA3E2CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCFBA6BE-8291-4048-9336-5C77FDA3E2CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{089C9143-F948-49E0-AA4B-62E800BD6A5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{089C9143-F948-49E0-AA4B-62E800BD6A5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{089C9143-F948-49E0-AA4B-62E800BD6A5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{089C9143-F948-49E0-AA4B-62E800BD6A5C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

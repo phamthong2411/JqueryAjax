@@ -1,0 +1,76 @@
+﻿@{
+    ViewBag.Title = "Employee List";
+}
+@section scripts
+{
+    <script src="~/Scripts/bootbox.min.js"></script>
+    <script src="~/Scripts/plugins/mustache.min.js"></script>
+
+    <script src="~/Scripts/plugins/jquery.twbsPagination.min.js"></script>
+    <script src="~/Scripts/controllers/homeController.js"></script>
+
+}<br />
+<div class="row">
+    <div class="col-md-12">
+        <div class="col-md-10">
+            <div class="col-md-4">
+                <input type="text" class="form-control" id="txtNameS" placeholder="Type name" />
+            </div>
+            <div class="col-md-2">
+                <select class="form-control" id="ddlStatusS">
+                    <option value="">All</option>
+                    <option value="true">Active</option>
+                    <option value="false">Locked</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <button class="btn btn-primary" id="btnSearch">Search</button>
+                <button class="btn btn-default" id="btnReset">Reset</button>
+            </div>
+
+        </div>
+        <div class="col-md-2">
+            <button id="btnAddNew" class="btn btn-success pull-right">Add employee</button>
+        </div>
+
+
+    </div>
+</div>
+<br />
+<div class="row">
+    <div class="col-md-12">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>Name</td>
+                    <td>Salary</td>
+                    <td>Status</td>
+                    <td>#</td>
+                </tr>
+            </thead>
+            <tbody id="tblData"></tbody>
+        </table>
+
+        <div id="pagination" class="pagination">
+
+
+        </div>
+
+        <script id="data-template" type="x-tmpl-mustache">
+            <tr>
+                <td>{{ID}}</td>
+                <td>{{Name}}</td>
+                <td><input type="number" class="txtSalary" data-id="{{ID}}" value="{{Salary}}" /></td>
+                <td>{{{Status}}}</td>
+                <td>
+                    <button class="btn btn-primary btn-edit" data-id="{{ID}}">Edit</button>
+                    <button class="btn btn-danger btn-delete" data-id="{{ID}}">Delete</button>
+                </td>
+            </tr>
+        </script>
+    </div>
+
+</div>
+
+@RenderPage("_AddUpdateModal.cshtml")

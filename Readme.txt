@@ -1,0 +1,1 @@
+- Sử dụng code first, migration tạo data từ class code
